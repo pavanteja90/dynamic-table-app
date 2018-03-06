@@ -5,16 +5,16 @@ import { DownlaodComponent } from './downlaod/downlaod.component';
 
 const routes: Routes = [
     {
-        path: '', component: AppComponent, pathMatch: 'full'
+        path: '', pathMatch: 'full' , component: AppComponent
     },
     {
-        path: '/home', component: AppComponent
+        path: 'home', component: AppComponent
     },
     {
-        path: '/create', component: TableComponent
+        path: 'create', component: TableComponent
     },
     {
-        path: '/download', component: DownlaodComponent
+        path: 'download', component: DownlaodComponent
     }
 ]
 
