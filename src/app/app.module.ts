@@ -7,6 +7,10 @@ import { TableComponent } from './table/table.component';
 import { Router } from './app.routing';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+
+//Explicitly written Bootstrap Module
+import { AppBootstrapModule } from "./app.bootstrap.module";
 
 @NgModule({
   declarations: [
@@ -16,6 +20,9 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
   ],
   imports: [
     BrowserModule,
+    AppBootstrapModule,
+    FormsModule,
+    ReactiveFormsModule,
     Router
   ],
   providers: [

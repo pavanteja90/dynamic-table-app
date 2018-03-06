@@ -1,5 +1,8 @@
 {
   "compileOnSave": false,
+  "indentSize": 2,
+  "tabSize": 2,
+  "buildOnSave": true,
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
