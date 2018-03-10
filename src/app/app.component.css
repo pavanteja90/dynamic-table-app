@@ -1,0 +1,11 @@
+.current-tab{
+    border-bottom: 2px solid #666;
+}
+.navbar{
+    background-color: #aaa !important;
+}
+.navbar-nav>.nav-item:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
