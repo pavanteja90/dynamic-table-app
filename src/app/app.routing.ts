@@ -1,20 +1,25 @@
 import { RouterModule, Routes } from "@angular/router";
 import { AppComponent } from "./app.component";
+import { HomeComponent } from "./home/home.component";
 import { TableComponent } from './table/table.component';
 import { DownlaodComponent } from './downlaod/downlaod.component';
+import { ContactUsComponent } from "./contact-us/contact-us.component";
 
 const routes: Routes = [
     {
-        path: '', pathMatch: 'full' , component: AppComponent
+        path: '', pathMatch: 'full' , component: HomeComponent
     },
     {
-        path: 'home', component: AppComponent
+        path: 'home', component: HomeComponent
     },
     {
         path: 'create', component: TableComponent
     },
     {
         path: 'download', component: DownlaodComponent
+    },
+    {
+        path: 'contact', component: ContactUsComponent
     }
 ]
 

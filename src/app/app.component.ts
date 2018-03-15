@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from "@angular/router";
 declare var $: any;
 
 @Component({
@@ -8,17 +9,18 @@ declare var $: any;
 })
 export class AppComponent implements OnInit{
   private id: string = "#a1";
-  constructor(){
+  constructor(private router: Router){
 
   }
 
   ngOnInit(){
-    $("#a1").addClass("current-tab");
+    $("#a1").addClass("current-tab active");
   }
 
   navigate(id){
-    $(this.id).removeClass("current-tab");
+    $(this.id).removeClass("current-tab active");
     this.id = "#a"+id.toString();
-    $(this.id).addClass("current-tab");
+    $(this.id).addClass("current-tab active");
+    // this.router.navigate([path]);
   }
 }

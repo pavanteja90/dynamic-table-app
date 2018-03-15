@@ -11,12 +11,16 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 //Explicitly written Bootstrap Module
 import { AppBootstrapModule } from "./app.bootstrap.module";
+import { HomeComponent } from './home/home.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DownlaodComponent,
-    TableComponent
+    TableComponent,
+    HomeComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,

@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./table.component.css']
 })
 export class TableComponent implements OnInit {
-
-  constructor() { }
+  title: string;
+  constructor() {
+    this.title = "Table";
+  }
 
   ngOnInit() {
   }
